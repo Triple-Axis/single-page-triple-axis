@@ -22,7 +22,7 @@ header {
 }
 
 .menu a {
-  color: white;
+  color: var(--color-white);
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
@@ -36,7 +36,102 @@ main {
 
 .triple img {
   max-width: 100%;
-  width: 600px;
+  width: 35rem;
+}
+
+/***SECTION***/
+
+.corpo {
+  width: 100%;
+  height: 30rem;
+  padding: 15% 20%;
+}
+
+.img1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5%;
+}
+
+.imagem-1 {
+  width: 11rem;
+  background-color: var(--color-blue-rgb);
+  border-radius: 0.5rem;
+  box-shadow: 1rem 1rem 2rem -1rem var(--color-green-rgb);
+}
+
+.imagem-2 {
+  width: 11rem;
+  background-color: var(--color-green-rgb);
+  border-radius: 0.5rem;
+  box-shadow: -1rem 1rem 2rem -1rem var(--color-blue-rgb);
+}
+
+.img-escrito {
+  color: var(--color-white);
+  width: 40%;
+  line-height: 1.5rem;
+}
+
+/***login***/
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+}
+
+.box {
+  position: relative;
+  width: 18.5rem;
+  height: 21.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  filter: blur(6.5rem);
+}
+
+.box::before,
+.box::after {
+  background: linear-gradient(235deg, #0351c58f, #00974c);
+}
+
+.content {
+  padding: 1.25rem;
+  box-sizing: border-box;
+  color: var(--color-white);
+}
+
+.comentario {
+  position: absolute;
+  margin-top: -3.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-left: 3%;
+}
+
+.input {
+  font-weight: 400;
+  padding: 5px 8px;
+}
+
+.input-comen {
+  padding: 20px 8px;
 }
 
 /***SESSÃO***/
