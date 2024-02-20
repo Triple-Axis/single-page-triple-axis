@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 body {
-  background-color: rgb(0, 3, 1);
+  background-color: var(--color-black);
   max-width: var(--max-width);
   min-height: 100vh;
 }
@@ -22,19 +22,117 @@ header {
 }
 
 .menu a {
-  color: white;
-  font-weight: 500;
-  font-family: "Inter", sans-serif;
+  color: var(--color-white);
+  font-weight: 400;
+  font-family: var(--font-main);
 }
 
 /***IMAGEM***/
 
-main {
+.triple {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.triple img {
-  max-width: 100%;
-  width: 600px;
+.triple-img {
+  width: 50%;
+}
+
+/***SESSÃO***/
+
+.body-all {
+  width: 100%;
+  height: 30rem;
+  padding: 15% 20%;
+  margin-top: -10rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5%;
+}
+
+.image-left {
+  width: 11rem;
+  background-color: var(--color-blue);
+  border-radius: 0.3rem;
+  box-shadow: -1rem 1rem 2rem -1rem var(--color-green);
+}
+
+.image-right {
+  width: 11rem;
+  background-color: var(--color-green);
+  border-radius: 0.3rem;
+  box-shadow: 1rem 1rem 2rem -1rem var(--color-blue);
+}
+
+p {
+  color: var(--color-white);
+  width: 40%;
+  line-height: 1.5rem;
+  font-family: var(--font-main);
+}
+
+/***login***/
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+}
+
+.box {
+  position: relative;
+  width: 18.5rem;
+  height: 21.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  filter: blur(6.5rem);
+}
+
+.box::before,
+.box::after {
+  background: linear-gradient(235deg, #0351c58f, #00974c);
+}
+
+.content {
+  padding: 1.25rem;
+  box-sizing: border-box;
+  color: var(--color-white);
+}
+
+.comentario {
+  position: absolute;
+  margin-top: -3.5rem;
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-left: 3%;
+}
+
+.input {
+  font-weight: 400;
+  padding: 5px 8px;
+}
+
+.input-comen {
+  padding: 20px 8px;
 }
