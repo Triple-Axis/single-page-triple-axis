@@ -1,3 +1,6 @@
 :root {
   --max-width: 1400px;
+  --color-blue-rgb: rgb(3, 83, 200);
+  --color-green-rgb: rgb(1, 156, 71);
+  --color-white: #ffff;
 }
