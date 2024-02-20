@@ -38,3 +38,39 @@ main {
   max-width: 100%;
   width: 600px;
 }
+
+/***SESSÃO***/
+
+.body-all {
+  width: 100%;
+  height: 50rem;
+  padding: 10% 20%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5%;
+}
+
+.image-left {
+  width: 11rem;
+  background-color: rgb(3, 83, 200);
+  border-radius: 0.3rem;
+  box-shadow: -1rem 1rem 2rem -1rem rgb(1, 156, 71);
+}
+
+.image-right {
+  width: 11rem;
+  background-color: rgb(1, 156, 71);
+  border-radius: 0.3rem;
+  box-shadow: 1rem 1rem 2rem -1rem rgb(3, 83, 200);
+}
+
+p {
+  color: white;
+  width: 40%;
+  line-height: 1.5rem;
+}
